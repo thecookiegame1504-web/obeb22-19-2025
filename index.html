@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Регистрация на мероприятие 'Алхимия Диалога' — 17 ноября, 14:00. Практическая мастерская по переводу конфликтов в понимание." />
+<title>Алхимия Диалога — регистрация</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+--gold: #d6b24a;
+--bg: #071018;
+--muted: #9b8f6a;
+--ornament: #4a3b18;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+
+html, body {
+height: 100%;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+background: radial-gradient(ellipse at center, rgba(12,18,22,0.95) 0%, rgba(3,6,8,1) 60%), var(--bg);
+color: #efe6d5;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+
+.card {
+width: 100%;
+max-width: 960px;
+border-radius: 14px;
+overflow: hidden;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+display: grid;
+grid-template-columns: 1fr 420px;
+min-height: 640px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.25));
+position: relative;
+}
+
+
+.poster {
+position: relative;
+padding: 44px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: radial-gradient(circle at center, rgba(214, 178, 74, 0.06) 0%, transparent 70%), repeating-radial-gradient(circle at center, transparent 0, rgba(214, 178, 74, 0.03) 2px, transparent 4px);
+}
+
+
+.poster::before {
+content: "";
+position: absolute;
+inset: 0;
+background: radial-gradient(circle at 20% 30%, rgba(214, 178, 74, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(214, 178, 74, 0.04) 0%, transparent 50%);
+pointer-events: none;
+}
+
+
+.poster .title {
+color: var(--gold);
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: 48px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.poster .subtitle {
+color: var(--muted);
+font-style: italic;
+margin-top: 8px;
+font-family: 'Playfair Display', serif;
+}
+
+
+.ornaments {
+position: absolute;
+inset: 0;
+pointer-events: none;
+overflow: hidden;
+}
+
+
+.ornaments::before, .ornaments::after {
+content: "";
+position: absolute;
+width: 120px;
+</html>
